@@ -1,0 +1,22 @@
+.app-logo{
+    display: inline-block;
+    width: 100%;
+    background-color:#d5f3ff;
+
+}
+.app-header{
+    display: inline-block;
+    width: 90%;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.app-center{
+    width: 90%;
+    margin: auto;
+    text-align: center;
+}
+
+.bold-font{
+    font-weight: bold;
+}
