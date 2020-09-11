@@ -1,0 +1,48 @@
+<br />
+<div class="app-header">
+    <h1>Cats & Dogs</h1>
+</div>
+<br />
+
+<div class="app-center">
+    <h4>
+        {{title}}
+    </h4>
+
+    <div class="cont d-flex justify-content-center align-items-center flex-column">
+
+        <!-- <div class="custom-file">
+            <input type="file" class="custom-file-input" (change)="fileChange($event)">
+            <br />
+        </div> -->
+        <br />
+
+        <input #csvInput hidden="true" type="file" onclick="this.value=null" (change)="fileChange($event)"
+            accept="image/jpeg" />
+        <button mat-raised-button (click)="csvInput.click()">Select Image</button>
+        <br />
+        <br />
+
+        <img [src]="imageUrl" *ngIf="imageUrl" class="img-responsive">
+
+        <br />
+        <br />
+        <div *ngIf="imageUrl">
+            <button mat-raised-button (click)="onClickPredict($event)">Predict</button>
+            <!-- <button (click)="onClickPredict($event)">Predict</button> -->
+            <br />
+            <br />
+            <div class="bold-font">Prediction:</div>
+            <div>{{class_names[prediction_index]}}</div>
+        </div>
+    </div>
+    <!-- <div *ngIf="loading">
+        <img src="./assets/ajax-loader.gif">
+    </div> -->
+
+    <div fxLayout="row" fxLayoutAlign="space-around center" style="height:100%" *ngIf="loading">
+        <mat-spinner diameter="75" mode="indeterminate" strokeWidth="5"></mat-spinner>
+    </div>
+
+
+</div>

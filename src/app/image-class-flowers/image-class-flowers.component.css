@@ -1,0 +1,39 @@
+.app-logo{
+    display: inline-block;
+    width: 100%;
+    background-color:#d5f3ff;
+
+}
+.app-header{
+    display: inline-block;
+    width: 100%;
+    text-align: center;
+    /* background-color: aqua; */
+}
+
+.app-center{
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.bold-font{
+    font-weight: bold;
+}
+
+.example-icon {
+    padding: 0 14px;
+  }
+  
+.app-spacer {
+    flex: 1 1 auto;
+}
+
+/* .mat-raised-button{
+    color: white !important;
+  } */
+
+  .img-responsive {
+    max-width: 50%;
+    height: auto;
+  }

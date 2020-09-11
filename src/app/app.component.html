@@ -1,12 +1,61 @@
-<div class="app-logo">
+<div style="height: 100vh;">
+  <mat-toolbar color="primary">
+    <mat-toolbar-row>
+      <button mat-icon-button (click)="sidenav.toggle()" fxShow="true" fxHide.gt-sm>
+        <mat-icon>menu</mat-icon>
+      </button>
+      &nbsp;&nbsp;
+      <img class="logo" width="40" src="https://webassets.unt.edu/unt-foundation/images/unt-1890-banner.svg" />
+      &nbsp;&nbsp;
+      <span>Image Classfication</span>
+      <span class="app-spacer"></span>
+      <div fxShow="true" fxHide.lt-md="true" style="padding: 50px; color: white;">
+        <a routerLink="/image-class-flowers">
+          <div style="color: white; display: inline-block;">Flowers</div>
+        </a> &nbsp;&nbsp;
+        <a routerLink="/image-class-animals">
+          <div style="color: white; display: inline-block;">Animals</div>
+        </a>
+        &nbsp;&nbsp;
+        <a routerLink="/image-class-cats-dogs">
+          <div style="color: white; display: inline-block;">Cats & Dogs </div>
+        </a>
+      </div>
+    </mat-toolbar-row>
+  </mat-toolbar>
+
+  <mat-sidenav-container fxFlexFill>
+    <mat-sidenav #sidenav>
+      <mat-nav-list>
+        <a routerLink="/image-class-flowers" mat-list-item>
+          Flowers
+        </a>
+        <a routerLink="/image-class-animals" mat-list-item>
+          Animals
+        </a>
+        <a routerLink="/image-class-cats-dogs" mat-list-item>
+          Cats & Dogs
+        </a>
+        <a (click)="sidenav.toggle()" mat-list-item>
+          <mat-icon>close</mat-icon> Close
+        </a>
+      </mat-nav-list>
+    </mat-sidenav>
+    <mat-sidenav-content fxFlexFill>
+      <router-outlet></router-outlet>
+    </mat-sidenav-content>
+  </mat-sidenav-container>
+</div>
+
+<!-- <div class="app-logo">
   <img width="100" height="100" src="https://webassets.unt.edu/unt-foundation/images/unt-1890-banner.svg" />
   <div class="app-header">
     <h1>Image Classfication</h1>
   </div>
 </div>
 <br />
-<br />
-<div class="app-center">
+<br /> -->
+<!-- <div class="app-center">
   <h4>
     {{title}}
   </h4>
@@ -34,4 +83,4 @@
     <img src="./assets/ajax-loader.gif">
   </div>
 
-</div>
+</div> -->
