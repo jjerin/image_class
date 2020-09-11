@@ -1,6 +1,21 @@
 # ImageClass
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.8.
+This project was built on Angular 10.  The models were trained using TensorFlow and Keras libraries on Python.  TensorFlow.js was used to convert the models for JavaScript compatibility.
+
+# Application URL
+https://image-class-app.ue.r.appspot.com/
+
+
+## Screenshots
+
+### Desktop
+![Desktop Screenshot](/screenshots/desktop-screenshot-1.png?raw=true "Desktop Browser Screenshot")
+
+### Mobile
+![Mobile Screenshot 1](/screenshots/mobile-screenshot-1.jpeg?raw=true "Mobile Browser Screenshot 1")
+
+![Mobile Screenshot 2](/screenshots/mobile-screenshot-2.jpeg?raw=true "Mobile Browser Screenshot 2")
+
 
 ## Development server
 
