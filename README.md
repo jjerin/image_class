@@ -1,6 +1,6 @@
 # ImageClass
 
-This project was built on Angular 10.  The models were trained using TensorFlow and Keras libraries on Python.  TensorFlow.js was used to convert the models for JavaScript compatibility.
+This application classifies immages using AI and Machine Learning.  The models were trained using TensorFlow and Keras libraries on Python.  The UI was built on Angular 10.  TensorFlow.js was used to convert the models for JavaScript compatibility.
 
 # Application URL
 https://image-class-app.ue.r.appspot.com/
